@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>National Security &amp; Fire — the world that watches over yours</title>
+  <meta name="description" content="Scroll to fly through the world of National Security & Fire — burglar, fire and video protection on the Gulf Coast." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 90 20v30c0 25-18 38-40 45C28 88 10 75 10 50V20z' fill='%23F05040' stroke='%23E3C700' stroke-width='6'/%3E%3C/svg%3E" />
+  <style>
+    /* Matches the generated scenes' deep-navy background + brand palette. */
+    :root, .sw-root {
+      --sw-bg: #0B1622;          /* == the scene background colour */
+      --sw-ink: #F0F0F0;
+      --sw-ink-soft: #93A3B8;
+      --sw-accent: #F05040;      /* per-section accents override this at runtime */
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world"></div>
+
+  <script src="scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'National Security & Fire', href: '#top' },
+      cta: { label: 'Get protected', href: 'tel:+14097449411' },
+      hint: 'scroll to fly in',
+      diveScroll: 1.3,
+      connScroll: 0.9,
+      sections: [
+        {
+          id: 'night', label: 'The Neighborhood',
+          still: 'assets/scene_1.webp',
+          clip: 'assets/vid/dive_1.mp4', clipMobile: 'assets/vid/dive_1-m.mp4',
+          accent: '#E3C700',
+          eyebrow: 'While the city sleeps',
+          title: 'Someone has to stay awake.',
+          body: 'Across the Gulf Coast, families rest easier behind National Security & Fire protection — watched all night, every night.',
+          tags: ['Burglar alarms', 'Video surveillance'],
+        },
+        {
+          id: 'home', label: 'The Smart Home',
+          still: 'assets/scene_2.webp',
+          clip: 'assets/vid/dive_2.mp4', clipMobile: 'assets/vid/dive_2-m.mp4',
+          accent: '#F05040',
+          eyebrow: 'Inside every protected home',
+          title: 'Small lights. Big promise.',
+          body: 'Door and window sensors, cameras and one glowing keypad keep quiet watch — armed in a single touch.',
+          tags: ['Entry sensors', 'Cameras', 'One-touch arm'],
+        },
+        {
+          id: 'fire', label: 'Fire Watch',
+          still: 'assets/scene_3.webp',
+          clip: 'assets/vid/dive_3.mp4', clipMobile: 'assets/vid/dive_3-m.mp4',
+          accent: '#F05040',
+          scroll: 1.5, linger: 0.4,
+          eyebrow: 'Fire never sleeps either',
+          title: 'We see smoke before it’s fire.',
+          body: 'Fire alarm systems and sprinklers engineered, installed and inspected to stop disaster at the first ember.',
+          tags: ['Fire alarm', 'Fire sprinkler', 'Inspections'],
+        },
+        {
+          id: 'watch', label: 'The Command Center',
+          still: 'assets/scene_4.webp',
+          clip: 'assets/vid/dive_4.mp4', clipMobile: 'assets/vid/dive_4-m.mp4',
+          accent: '#E3C700',
+          scroll: 1.6, linger: 0.45,
+          eyebrow: 'The command center',
+          title: 'Watched over, around the clock.',
+          body: 'Every alert lands in front of real people at our 24/7 monitoring center — answered in seconds.',
+          tags: ['24/7 monitoring', 'Real people'],
+        },
+        {
+          id: 'response', label: 'Rapid Response',
+          still: 'assets/scene_5.webp',
+          clip: 'assets/vid/dive_5.mp4', clipMobile: 'assets/vid/dive_5-m.mp4',
+          accent: '#F05040',
+          eyebrow: 'When seconds matter',
+          title: 'Help is already moving.',
+          body: 'Verified alarms go straight to dispatch — police, fire and our own technicians rolling while others are still dialing.',
+          tags: ['Instant dispatch'],
+        },
+        {
+          id: 'finale', label: 'Peace of Mind',
+          still: 'assets/scene_6.webp',
+          clip: 'assets/vid/dive_6.mp4', clipMobile: 'assets/vid/dive_6-m.mp4',
+          accent: '#E3C700',
+          scroll: 1.7, linger: 0.5,
+          eyebrow: 'National Security & Fire',
+          title: 'Because your peace of mind is a matter for National Security.',
+          body: 'Burglar, fire sprinkler, fire alarm and video protection for homes and businesses — one call: 409‑744‑9411.',
+          tags: [],
+          cta: { primary: { label: 'Get protected', href: 'tel:+14097449411' },
+                 secondary: { label: 'Our services', href: 'https://natsec.us' } },
+        },
+      ],
+      connectors: [
+        'assets/vid/conn_1.mp4', 'assets/vid/conn_2.mp4', 'assets/vid/conn_3.mp4',
+        'assets/vid/conn_4.mp4', 'assets/vid/conn_5.mp4',
+      ],
+      connectorsMobile: [
+        'assets/vid/conn_1-m.mp4', 'assets/vid/conn_2-m.mp4', 'assets/vid/conn_3-m.mp4',
+        'assets/vid/conn_4-m.mp4', 'assets/vid/conn_5-m.mp4',
+      ],
+    });
+  </script>
+</body>
+</html>
