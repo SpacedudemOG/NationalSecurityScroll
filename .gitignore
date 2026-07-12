@@ -1,3 +1,13 @@
 gen/
 assets/vid/*_src.mp4
 node_modules/
+ad/gen/seg*.mp4
+ad/gen/frame_*.jpg
+ad/gen/video_raw.mp4
+ad/gen/video_captioned.mp4
+ad/gen/audio_mix.m4a
+ad/gen/*.json
+ad/gen/*.err
+ad/gen/concat.txt
+ad/gen/voice_test.mp3
+ad/node_modules
